@@ -2,7 +2,6 @@ import React, { useState, useContext, useEffect } from "react";
 import clsx from "clsx";
 import moment from "moment";
 import {
-  makeStyles,
   Drawer,
   AppBar,
   Toolbar,
@@ -14,12 +13,13 @@ import {
   Menu,
   useTheme,
   useMediaQuery,
-} from "@material-ui/core";
+} from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import CachedIcon from "@material-ui/icons/Cached";
+import MenuIcon from "@mui/icons-material/Menu";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import CachedIcon from "@mui/icons-material/Cached";
 
 import MainListItems from "./MainListItems";
 import NotificationsPopOver from "../components/NotificationsPopOver";
@@ -39,10 +39,10 @@ import ChatPopover from "../pages/Chat/ChatPopover";
 import { useDate } from "../hooks/useDate";
 
 import ColorModeContext from "../layout/themeContext";
-import Brightness4Icon from '@material-ui/icons/Brightness4';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 import LanguageControl from "../components/LanguageControl";
-import { LanguageOutlined } from "@material-ui/icons";
+import { LanguageOutlined } from "@mui/icons-material";
 
 const drawerWidth = 240;
 

@@ -1,22 +1,22 @@
 import React, { useState, useContext } from "react";
 import { Link as RouterLink } from "react-router-dom";
 
-import Button from "@material-ui/core/Button";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
-import Link from "@material-ui/core/Link";
-import Grid from "@material-ui/core/Grid"; 
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { makeStyles } from "@mui/styles";
+import Container from "@mui/material/Container";
 import { versionSystem } from "../../../package.json";
 import { i18n } from "../../translate/i18n";
 import { nomeEmpresa } from "../../../package.json";
 import { AuthContext } from "../../context/Auth/AuthContext";
 import logo from "../../assets/logo.png";
-import {LanguageOutlined} from "@material-ui/icons";
-import {IconButton, Menu, MenuItem} from "@material-ui/core";
+import {LanguageOutlined} from "@mui/icons-material";
+import {IconButton, Menu, MenuItem} from "@mui/material";
 import LanguageControl from "../../components/LanguageControl";
 
 
