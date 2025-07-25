@@ -34,6 +34,8 @@ import forgotsRoutes from "./forgotPasswordRoutes";
 import flowDefaultRoutes from "./flowDefaultRoutes";
 import flowBuilder from "./flowBuilderRoutes";
 import flowCampaignRoutes from "./flowCampaignRoutes";
+import customerRoutes from "./customerRoutes";
+import productRoutes from "./productRoutes";
 const routes = Router();
 
 routes.use(userRoutes);
@@ -68,6 +70,8 @@ routes.use(filesRoutes);
 routes.use(promptRoutes);
 routes.use(queueIntegrationRoutes);
 routes.use(forgotsRoutes);
+routes.use(customerRoutes);
+routes.use(productRoutes);
 
 routes.use(flowDefaultRoutes);
 routes.use(flowBuilder)
